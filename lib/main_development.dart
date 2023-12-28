@@ -1,4 +1,5 @@
 import 'package:app/src/bootstrap.dart';
+import 'package:app/src/utils/exceptions/async_error_logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 // ignore:depend_on_referenced_packages
@@ -26,7 +27,10 @@ void main() async {
   // appBootstrap.someFunction();
 
   // create a container configured with all the Firebase repositories
-  final container = ProviderContainer();
+  final container = ProviderContainer(
+    overrides: [],
+    observers: [AsyncErrorLogger()],
+  );
 
   // use the container above to create the root widget
   final root = appBootstrap.createRootWidget(container: container);

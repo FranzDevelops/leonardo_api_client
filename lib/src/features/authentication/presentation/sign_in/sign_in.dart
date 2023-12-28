@@ -7,7 +7,7 @@ class SignInView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Account View'),
+        title: const Text('Sign In View'),
       ),
       body: Container(
           // Add your UI code here

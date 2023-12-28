@@ -54,7 +54,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const WorkspaceView(),
         routes: [
           GoRoute(
-            path: 'gallery/',
+            path: 'gallery',
             name: AppRoute.gallery.name,
             builder: (context, state) {
               return const GalleryView();
