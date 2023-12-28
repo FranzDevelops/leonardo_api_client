@@ -19,6 +19,8 @@ dependencies:
   intl: ^0.18.0
   json_annotation: ^4.8.1
   riverpod_annotation: ^2.3.3
+  secure_storage_service:
+    path: packages/secure_storage_service
 
 dev_dependencies:
   build_runner: ^2.4.7
