@@ -7,8 +7,7 @@ part of 'user_details_model.dart';
 // **************************************************************************
 
 _$UserDetailsModelImpl _$$UserDetailsModelImplFromJson(
-  Map<String, dynamic> json,
-) =>
+        Map<String, dynamic> json) =>
     _$UserDetailsModelImpl(
       userDetails: (json['userDetails'] as List<dynamic>)
           .map((e) => UserDetailsModel.fromJson(e as Map<String, dynamic>))
@@ -16,15 +15,13 @@ _$UserDetailsModelImpl _$$UserDetailsModelImplFromJson(
     );
 
 Map<String, dynamic> _$$UserDetailsModelImplToJson(
-  _$UserDetailsModelImpl instance,
-) =>
+        _$UserDetailsModelImpl instance) =>
     <String, dynamic>{
       'userDetails': instance.userDetails,
     };
 
 _$UserDetailModelImpl _$$UserDetailModelImplFromJson(
-  Map<String, dynamic> json,
-) =>
+        Map<String, dynamic> json) =>
     _$UserDetailModelImpl(
       user: UserModel.fromJson(json['user'] as Map<String, dynamic>),
       tokenRenewalDate: json['tokenRenewalDate'] as String?,
@@ -35,8 +32,7 @@ _$UserDetailModelImpl _$$UserDetailModelImplFromJson(
     );
 
 Map<String, dynamic> _$$UserDetailModelImplToJson(
-  _$UserDetailModelImpl instance,
-) =>
+        _$UserDetailModelImpl instance) =>
     <String, dynamic>{
       'user': instance.user,
       'tokenRenewalDate': instance.tokenRenewalDate,

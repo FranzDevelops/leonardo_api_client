@@ -1,9 +1,10 @@
-import 'dart:convert';
-
-import 'package:app/src/features/authentication/domain/user_details_model.dart';
-import 'package:app/src/utils/constants/urls.dart';
+import 'package:app/src/core/common/constants/urls.dart';
+import 'package:app/src/features/authentication/domain/remote/user_details_model.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+part 'leonardo_user_repository.g.dart';
 
 class LeonardoUserRepository {
   LeonardoUserRepository(this.ref);
@@ -26,8 +27,9 @@ class LeonardoUserRepository {
   }
 }
 
-final leonardoUserRepository = Provider<LeonardoUserRepository>((ref) {
-  return LeonardoUserRepository(
-    ref,
-  );
-});
+@riverpod
+LeonardoUserRepository leonardoUserRepository(
+  LeonardoUserRepositoryRef ref,
+) {
+  return LeonardoUserRepository(ref);
+}

@@ -1,10 +1,11 @@
+import 'package:app/src/features/authentication/domain/user_details_abstract_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'user_details_model.freezed.dart';
 part 'user_details_model.g.dart';
 
 @freezed
-class UserDetailsModel with _$UserDetailsModel {
+class UserDetailsModel extends UserDetails with _$UserDetailsModel {
   const factory UserDetailsModel({
     required List<UserDetailsModel> userDetails,
   }) = _UserDetailsModel;
@@ -14,7 +15,7 @@ class UserDetailsModel with _$UserDetailsModel {
 }
 
 @freezed
-class UserDetailModel with _$UserDetailModel {
+class UserDetailModel extends UserDetails with _$UserDetailModel {
   const factory UserDetailModel({
     required UserModel user,
     @JsonKey(name: 'tokenRenewalDate') String? tokenRenewalDate,

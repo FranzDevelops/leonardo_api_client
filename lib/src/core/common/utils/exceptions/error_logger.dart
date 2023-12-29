@@ -1,4 +1,4 @@
-import 'package:app/src/utils/exceptions/app_exception.dart';
+import 'package:app/src/core/common/utils/exceptions/app_exception.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

@@ -1,4 +1,4 @@
-import 'package:app/src/utils/string_hardcoded.dart';
+import 'package:app/src/core/common/utils/string_hardcoded.dart';
 import 'package:flutter/material.dart';
 
 /// Simple not found screen used for 404 errors (page not found on web)

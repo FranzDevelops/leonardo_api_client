@@ -1,6 +1,6 @@
-import 'package:app/src/l10n/l10n.dart';
-import 'package:app/src/routing/app_router.dart';
-import 'package:app/src/utils/string_hardcoded.dart';
+import 'package:app/src/core/common/utils/string_hardcoded.dart';
+import 'package:app/src/core/config/l10n/l10n.dart';
+import 'package:app/src/core/config/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

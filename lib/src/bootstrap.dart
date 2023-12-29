@@ -1,6 +1,6 @@
 import 'package:app/src/app/view/app.dart';
-import 'package:app/src/utils/exceptions/error_logger.dart';
-import 'package:app/src/utils/string_hardcoded.dart';
+import 'package:app/src/core/common/utils/exceptions/error_logger.dart';
+import 'package:app/src/core/common/utils/string_hardcoded.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

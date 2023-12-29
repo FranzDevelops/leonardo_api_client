@@ -1,5 +1,5 @@
-import 'package:app/src/utils/exceptions/app_exception.dart';
-import 'package:app/src/utils/exceptions/error_logger.dart';
+import 'package:app/src/core/common/utils/exceptions/app_exception.dart';
+import 'package:app/src/core/common/utils/exceptions/error_logger.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Error logger class to keep track of all AsyncError states that are set

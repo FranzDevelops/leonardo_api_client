@@ -1,25 +1,28 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'api_key_service.dart';
+part of 'local_account_repository.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$apiKeyServiceHash() => r'7ac0d7635f65c3332be793ce0d83d4221c089ec5';
+String _$hiveStorageServiceHash() =>
+    r'ae29e6b8f9e33f89cbe817e2df60ba1c9e2e68fa';
 
-/// See also [apiKeyService].
-@ProviderFor(apiKeyService)
-final apiKeyServiceProvider = Provider<ApiKeyService>.internal(
-  apiKeyService,
-  name: r'apiKeyServiceProvider',
+/// See also [hiveStorageService].
+@ProviderFor(hiveStorageService)
+final hiveStorageServiceProvider =
+    AutoDisposeProvider<HiveStorageService<UserDetails>>.internal(
+  hiveStorageService,
+  name: r'hiveStorageServiceProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$apiKeyServiceHash,
+      : _$hiveStorageServiceHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef ApiKeyServiceRef = ProviderRef<ApiKeyService>;
+typedef HiveStorageServiceRef
+    = AutoDisposeProviderRef<HiveStorageService<UserDetails>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

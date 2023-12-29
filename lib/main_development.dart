@@ -1,5 +1,5 @@
 import 'package:app/src/bootstrap.dart';
-import 'package:app/src/utils/exceptions/async_error_logger.dart';
+import 'package:app/src/core/common/utils/exceptions/async_error_logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 // ignore:depend_on_referenced_packages

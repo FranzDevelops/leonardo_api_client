@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class WorkspaceView extends ConsumerStatefulWidget {
-  const WorkspaceView({super.key});
+  const WorkspaceView({
+    required this.expanded,
+    required this.currentPath,
+    required this.child,
+    super.key,
+  });
+
+  final bool expanded;
+  final String currentPath;
+  final Widget child;
 
   @override
   _WorkspaceState createState() => _WorkspaceState();
